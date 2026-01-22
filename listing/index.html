@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>demo</title>
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            .us1{
+                list-style-type: disc;
+            }
+            .us2{
+                list-style: square;
+            }
+            ol{
+                list-style: upper-roman;
+            }
+            .os1{
+                list-style-type: upper-alpha;
+            }
+          /* 1. Remove default bullets and padding */
+.os2 {
+    list-style-type: none; 
+    padding: 0;
+}
+
+/* 2. Style the list item to make room for the image */
+.os2 li {
+    display: flex;
+    align-items: center; /* Centers image vertically with text */
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+/* 3. Create the bullet using the image */
+.os2 li::before {
+    content: "";
+    display: inline-block;
+    
+    /* Set the exact size you want for the bullet */
+    width: 25px; 
+    height: 25px;
+    margin-right: 15px; /* Space between image and text */
+    
+    /* Apply the image as a background */
+    background-image: url("https://images.unsplash.com/photo-1766964855974-1dfcf5107823?ixid=M3w4MjcwNjd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjkwNzcxMjN8&ixlib=rb-4.1.0&fit=max&q=80&auto=format");
+    background-size: cover; /* Ensures the image fills the 25x25 square */
+    background-position: center;
+    border-radius: 50%; /* Optional: makes the image bullet a circle */
+}
+            .def-list dt{
+                font-weight: bold;
+                color:#2d6cdf;
+                margin-top: 10px;
+                font-size: 18px;
+            }
+            .def-list dd{
+                margin-left: 20px;
+                margin-bottom: 10px;
+                color: #555;
+                font-size: 16px;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <h4>INTRODUCTION TO COMPUTERS</h4>
+        <ul class="us1">
+            <li>Speed</li>
+            <li>Accuarcy</li>
+            <li>Diligence</li>
+            <li>IQ</li>
+            <li>Versatility</li>
+        </ul>
+        <hr>
+            <ul class="us2">
+            <li>Speed</li>
+            <li>Accuarcy</li>
+            <li>Diligence</li>
+            <li>IQ</li>
+            <li>Versatility</li>
+        </ul>
+        <hr>
+         <ul class="us1">
+            <li>Speed</li>
+            <li>Accuarcy</li>
+            <li>Diligence</li>
+            <li>IQ</li>
+            <li>Versatility</li>
+        </ul>
+        <hr>
+         <ol >
+            <li>Speed</li>
+            <li>Accuarcy</li>
+            <li>Diligence</li>
+            <li>IQ</li>
+            <li>Versatility</li>
+        </ol>
+        <hr>
+                <ol class="os1">
+            <li>Speed</li>
+            <li>Accuarcy</li>
+            <li>Diligence</li>
+            <li>IQ</li>
+            <li>Versatility</li>
+        </ol>
+        <hr>
+            <ol class="os2">
+            <li>Speed</li>
+            <li>Accuarcy</li>
+            <li>Diligence</li>
+            <li>IQ</li>
+            <li>Versatility</li>
+        </ol>
+        <hr>
+        <h2>WEB DEVELOPMENT TERMS</h2>
+        <dl class="def-list">
+            <dt>html</dt>
+            <dd>Hyper Text markup language used to structure web page.</dd>
+            <dt>css</dt>
+            <dd>cascading style sheets - used to style web pages.</dd>
+            <dt>javascript</dt>
+            <dd>scripting language used to add interactivity to websites.</dd>
+        </dl>
+        <a href="/index.html">back to home page</a>
+    </body>
+</html>
