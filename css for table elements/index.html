@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed Table Styling</title>
+    <style>
+        /* General Table Setup */
+        table#alter {
+            border-collapse: collapse;
+            width: 400px; /* Increased for better visibility */
+            border: 2px solid black;
+        }
+
+        table#alter td, table#alter th {
+            border: 1px solid black;
+            height: 40px;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        table#alter th {
+            color: white;
+            background-color: green;
+        }
+        table#alter th:hover , table#alter td:hover{
+            color:red;
+        }
+
+        /* Zebra Striping */
+        /* Note: Using nth-child on TR is the cleanest way */
+        table#alter tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light grey for better readability */
+            color: black;
+        }
+
+        table#alter tr:nth-child(odd) {
+            background-color: aqua;
+            color: black;
+        }
+
+        /* If you want the text color yellow only for specific data */
+        table#alter td {
+            color: navy; 
+        }
+    </style>
+</head>
+<body>
+
+    <table id="alter">
+        <thead>
+            <tr>
+                <th>eno</th>
+                <th>ename</th>
+                <th>esal</th>
+                <th>egrade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>raj</td>
+                <td>3500</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>vimal</td>
+                <td>3500</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>sita</td>
+                <td>4000</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>arjun</td>
+                <td>2500</td>
+                <td>C</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
