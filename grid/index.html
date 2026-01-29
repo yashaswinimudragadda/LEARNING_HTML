@@ -30,6 +30,67 @@
                 text-align: center;
                 border: 0.5px solid #000;
             }
+            .container3{
+                display: grid; /* Enables the gap properties */
+                grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+                column-gap: 20px;
+                row-gap: 20px;
+            }
+            .item3{
+                background:#ebebee;
+                text-align: center;
+                border: 0.5px solid #000;
+            }
+            .container4{
+                background: #fff;
+                padding:0.5rem;
+                display: grid;
+                gap:10px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-columns: 50px;
+                grid-auto-flow: column;
+            }
+            .item4{
+                background:#ebebee;
+                text-align: center;
+                border: 0.5px solid #000;
+            }
+            .container5{
+                 background: #fff;
+                padding:0.5rem;
+                display: grid;
+                gap:10px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-auto-rows: 150px;
+                grid-auto-flow: row;
+
+            }
+             .item5{
+                background:#ebebee;
+                text-align: center;
+                border: 0.5px solid #000;
+            }
+.container6 {
+    display: grid;
+    gap: 10px;
+    /* Mapping out the 3-column layout */
+    grid-template: 
+        "header  header  header"  50px
+        "sidebar content side2"   150px
+        "footer  footer  footer"  50px / 1fr 2fr 1fr;
+}
+
+/* Assigning the grid-area names to the classes */
+.header-box  { grid-area: header; background: #ffadad; }
+.side1-box   { grid-area: sidebar; background: #ffd6a5; }
+.content-box { grid-area: content; background: #fdffb6; }
+.side2-box   { grid-area: side2;   background: #caffbf; }
+.footer-box  { grid-area: footer;  background: #9bf6ff; }
+
+.item6 {
+    border: 1px solid #000;
+    text-align: center;
+}
         </style>
     </head>
     <body>
@@ -47,6 +108,33 @@
         <div class="item2 box1"><p>one</p></div>
         <div class="item2 box2"><p>two</p></div>
         <div class="item2 box3"><p>three</p></div>
+        </section> 
+        <section class="container3">
+        <div class="item3 box1"><p>one</p></div>
+        <div class="item3 box2"><p>two</p></div>
+        <div class="item3 box3"><p>three</p></div>
+        </section>
+        <section class="container4">
+    <div class="item4"><p>1</p></div> 
+    <div class="item4"><p>2</p></div>
+     <div class="item4"><p>3</p></div>
+     <div class="item4"><p>4</p></div>
+      <div class="item4"><p>5</p></div>
         </section>  
+        <section class="container5">
+    <div class="item5"><p>1</p></div> 
+    <div class="item5"><p>2</p></div>
+     <div class="item5"><p>3</p></div>
+     <div class="item5"><p>4</p></div>
+      <div class="item5"><p>5</p></div>
+        </section> 
+<section class="container6">
+    <div class="item6 header-box"><p>1 (Header)</p></div> 
+    <div class="item6 side1-box"><p>2 (Sidebar 1)</p></div>
+    <div class="item6 content-box"><p>3 (Main Content)</p></div>
+    <div class="item6 side2-box"><p>4 (Sidebar 2)</p></div>
+    <div class="item6 footer-box"><p>5 (Footer)</p></div>
+</section>
+
     </body>
 </html>
