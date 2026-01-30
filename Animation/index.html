@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation demo</title>
+        <style>
+            .dv1{
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                margin-left: 400px;
+                margin-top: 200px;
+            }
+            .dv1:hover{
+                transform: rotate(100deg);
+            }
+            .a:hover{
+                transform: scale(1.5,1.5);
+            }
+            .b:hover{
+                transform: skew(1.5deg);
+            }
+            .c:hover{
+                transform: translateY(100px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dv1"></div>
+        <div class="dv1 a"></div>
+        <div class="dv1 b"></div>
+        <div class="dv1 c"></div>
+    </body>
+</html>
